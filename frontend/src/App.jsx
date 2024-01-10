@@ -6,7 +6,7 @@ function App() {
   const [todos, setTodos] = useState([]);
   // useEffect hook
 
-  fetch("http://localhost:3000/todo").then(async function (res) {
+  fetch("todo-backend-phi.vercel.app").then(async function (res) {
     const json = await res.json();
     setTodos(json.todos);
   });
